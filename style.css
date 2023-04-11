@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    margin: 0;
+    min-height: 100%;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("background.jpg");
+    font-family: 'Abel', sans-serif;
+}
+
+.container {
+    background: #000000d0;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 15px;
+}
+
+.searchArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    width: 45px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.searchBar {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 12px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    width: 100%;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+
+.humidity,
+.wind {
+    text-transform: capitalize;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.weather {
+    display: none;
+}
+
+/* mobile design */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("backgroundm.jpg");
+        background-size: cover;
+    }
+
+    .container {
+        border-radius: 20px;
+        width: 90%;
+    }
+
+    h1.temp {
+        font-size: 2rem;
+        margin-left: 15px;
+    }
+
+    .desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .description {
+        font-size: 15px;
+        margin: 15px;
+    }
+
+    .humidity,
+    .wind {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .weather {
+        display: none;
+    }
+}
